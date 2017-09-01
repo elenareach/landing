@@ -13,7 +13,21 @@
         &:hover{
             background-color:lighten($font-main ,10%);
         }
+    
     }
+    &--yellow{
+        background-color: $hero-btn;
+        transition: 0.3s;
+
+        &:hover{
+            background-color:lighten($hero-btn ,10%);
+        }
+    
+        
+    }  
+    &--text-uppercase{
+        text-transform: uppercase;
+    } 
 
 
 
