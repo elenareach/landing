@@ -1,0 +1,26 @@
+.button{
+    display:inline-block;
+    border-radius: 3px;
+    padding: 10px 22px 7px;
+    font-family: $ff-main-bold;
+    color: $font-btn;
+    text-decoration: none;
+
+    &--red{
+        background-color: $font-main;
+        transition: 0.3s;
+
+        &:hover{
+            background-color:lighten($font-main ,10%);
+        }
+    }
+
+
+
+
+
+
+
+
+        
+}
