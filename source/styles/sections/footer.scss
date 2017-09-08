@@ -1,0 +1,84 @@
+.footer{
+
+    padding-bottom: 50px;
+    background-color: $footer-bg;
+    &__top{
+        padding:88px 0 83px;
+        text-align: center;
+    }
+    &__bottom{
+        padding: 26px;
+        text-align: center;
+        background-color: $footer-copy;
+
+    }
+    &__title{
+        margin-bottom: 30px;
+        font-size: 1.8125rem;
+        color: #fff;
+        font-family: $ff-main-bold;
+    }
+
+    &__links{
+        margin-bottom: 53px;
+        color:#fff;
+        .fa{
+            color:#fff;
+            display: inline;
+            @include centerer-xy();
+
+        }
+    }
+    &__social{
+        display: inline-block;
+        position:relative;
+        text-decoration:none;
+        // padding:15px;
+        width:45px;
+        height:45px;
+        border:1px solid $footer-copy;
+        border-radius: 3px;
+        margin-left:20px;
+        &:first-child{
+            margin-left:0;
+        }
+        &:hover{
+            border:1px solid $font-main;
+        }
+    }
+
+    &__text{
+        margin-bottom: 30px;
+        font-size: 0.875rem;
+        color:$color-copy;
+    }
+    &__field{
+        width: 67%;
+        margin:0 auto 27px;
+    }
+    &__input{
+        width:100%;
+        padding:18px;
+        font-size: 0.875rem;
+        color:$color-copy;
+        border:0;
+        background-color: $footer-copy;
+    }
+    .button{
+        border:2px solid $footer-copy;
+        border-radius: 3px;
+        color:#fff;
+        font-size: 1rem;
+        background-color: initial;
+        padding: 15px 35px;
+
+       &:hover{
+            border:2px solid $font-main;
+        } 
+    }
+    &__copy{
+        font-size: 0.875rem;
+        color:$color-copy;
+    }
+    
+}
