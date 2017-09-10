@@ -1,0 +1,77 @@
+.approch{
+    background-color: $approch-bg;
+    padding: 86px 0 95px;
+
+    &__list{
+        margin: 0;
+        padding: 0;
+        counter-reset: count;
+    }
+
+    &__item{
+        margin-bottom:40px;
+        border-radius: 5px;
+        color:$font-color;
+        background-color: #fff;
+        box-shadow: -1px -1px 10px 1px rgba(214, 214, 214, 1);
+        &:nth-child(even){
+            display: flex;
+            flex-direction: row-reverse;
+            text-align: right;
+            .approch__text{
+                padding: 70px 90px 60px 90px;
+            }
+            .approch__step{
+                right:auto;
+                left:-52px;
+            }
+        }
+    }
+
+    &__image{
+        position: relative;
+        max-width: 340px;
+        max-height: 236px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    &__picture{
+        width:100%;
+        height: 100%;
+        display: block;
+    }
+
+    &__text{
+        display: inline-block;
+        width: 64%;
+        font-size: 0.875rem;
+        vertical-align: top;
+        padding: 70px 70px 60px 90px;
+    }
+    &__step{
+        @include centerer-y();
+        background-color: $font-main;
+        width:101px;
+        height:101px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        text-align: center;
+        color:#fff;
+        font-size: 1.25rem;
+        right: -52px;
+
+        &:before{
+            content: counter(count);
+            counter-increment: count;
+            display: block;
+            font-size:3rem;
+            font-family: $ff-steps;
+            line-height: 1;
+        }  
+    }
+
+
+
+
+
+}//approch

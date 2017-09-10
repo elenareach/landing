@@ -1,0 +1,20 @@
+mixin list(file,alt,title,description)   
+    li.approch__item
+        .approch__image
+            img.approch__picture(src="../images/"+ file alt=alt)
+            .approch__step step
+        .approch__text
+            .approch__title=title
+            p.approch__description=description                        
+section.approch
+    .container
+        .title.title--with-bottom-line
+            .title__header Our Approch
+            h2.title__text Check Our approches step by step ( how we do it )
+        
+        ul.approch__list   
+            +list("step-1.jpg","picture","Step 1 : Heading Here","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.")            
+            +list("step-2.jpg","picture","Step 2 : Heading Here","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.")            
+            +list("step-3.jpg","picture","Step 3 : Heading Here","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.")            
+            +list("step-4.jpg","picture","Step 4 : Heading Here","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.")            
+

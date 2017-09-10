@@ -16,4 +16,15 @@
 
 
     }
+    &--with-bottom-line{
+        position: relative;
+        &:after{
+            content: '';
+            @include centerer-x();
+            width:47px;
+            height:5px;
+            background-color: $font-color;
+            bottom:-16px;
+        }
+    }
 }
