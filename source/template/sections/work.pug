@@ -1,0 +1,27 @@
+mixin text(workName, description)
+    li.work__item.work__item--name
+        .work__name=workName
+        .work__description=description
+
+mixin images(src,alt)
+    li.work__item
+        img.work__picture(src="../images/"+ src alt=alt)
+
+
+
+
+
+section.work
+    .container
+        .title.title--with-bottom-line
+            .title__header Our Work
+            h2.title__text We are added our featured works 
+        ul.work__list
+            +text("Project Name","Facebook marketing")
+            +images("work-1.jpg","work1")
+            +text("Project Name","Landing page")
+            +images("work-2.jpg","work2")
+            +images("work-3.jpg","work3")
+            +text("Project Name","Landing page")
+            +images("work-4.jpg","work4")
+            +text("Project Name","Facebook marketing")
