@@ -1,0 +1,105 @@
+    
+.form-section{
+    padding: 100px 0 113px;
+    background-color: $form-bg;
+
+    .title{
+        margin-bottom:12px;
+        &__header,
+        &__text{
+            color:#fff;
+        }
+
+    }
+    .btn-down{
+        position: relative;
+        width:65px;
+        height:65px;
+        border:2px solid #fff;
+        border-radius: 50%;
+        margin: auto auto 20px;
+    }
+
+    .arrow-down{
+        @include centerer-xy();
+        padding: 20px;
+        color:#fff;
+        
+        .fa{
+            font-size:2.5rem;
+        }
+    }
+
+}
+
+.form{
+    position:relative;
+    width:67%;
+    background-color: #fff;
+    margin: auto;
+    text-align:center;
+    border-radius: 3px;
+    padding: 50px 50px 68px;
+    color: $form-color;
+
+    &-container{
+        padding-top:30px; 
+    }
+    &:before{
+        content:"";
+        border:30px solid transparent;
+        border-bottom: 30px solid #fff;
+        @include centerer-x();
+        top:-59px;
+    }
+    &__close-button{
+        position:absolute;
+        top:-23px;
+        right:-23px;
+        width:50px;
+        height:50px;
+        background: $font-main;
+        color:#fff;
+        border: 2px solid #fff;
+        border-radius:50%;
+        font-size: 2rem;
+        transition: 0.3s;
+
+        &:hover{
+            background:lighten($font-main ,20%);
+        }
+    }
+
+    &__text{
+        font-size:0.9rem;
+        line-height:1.5;
+        margin-bottom:33px;
+    }
+
+    &__fields{
+        margin-bottom: 36px;
+    }
+
+    &__input{
+        width:75%;
+        display: block;
+        margin: auto auto 8px auto;
+        padding: 18px 20px;
+        border: 1px solid $input-border;
+        border-radius: 3px;
+        font-size:0.875rem;
+
+        &-placeholder{
+            color: $input-placeholder;
+        }
+        &:focus{
+            box-shadow: 0 0 5px 1px rgba(18,135,191,0.5);
+            border: 1px solid $input-focus;
+        }
+    }
+    .button{
+        padding:15px 30px;
+        border: none;
+        
+    }
+}
