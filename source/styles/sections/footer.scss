@@ -2,9 +2,13 @@
 
     padding-bottom: 50px;
     background-color: $footer-bg;
+
     &__top{
         padding:88px 0 83px;
         text-align: center;
+        @media(max-width:1000px){
+            padding:20px 0;
+        } 
     }
     &__bottom{
         padding: 26px;
@@ -24,16 +28,16 @@
         color:#fff;
         .fa{
             color:#fff;
-            display: inline;
-            @include centerer-xy();
+            // display: inline;
+            // @include centerer-xy();
 
         }
     }
     &__social{
-        display: inline-block;
-        position:relative;
+        // display: inline-block;
+        // position:relative;
         text-decoration:none;
-        // padding:15px;
+        padding:15px;
         width:45px;
         height:45px;
         border:1px solid $footer-copy;

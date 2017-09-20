@@ -2,6 +2,9 @@
     padding:110px 0;
     background-color: $font-main;
     color: #fff;
+    @media(max-width:1000px){
+        padding:20px 0;
+    } 
     .title{
         &__header,
         &__text{
@@ -24,11 +27,23 @@
         background-color: #f35e59;
         font-weight: bold;
         text-align: center;
+        @media(max-width:1000px){
+            width:calc(256px * 1.2);
+            height:(254px* 1.2);
+        }  
+        @media(max-width:700px){
+            width:256px;
+            height:254px;
+        }   
+                
 
 
         &--name{
             position:relative;
             padding: 130px 40px 75px 40px;
+            @media(max-width:1000px){
+                border: 1px solid $font-main;
+            }            
             &:before{
                 content:"";
                 top:74px;

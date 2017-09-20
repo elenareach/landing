@@ -8,14 +8,11 @@ footer.footer
                 each item, key in linkItems
                     a.footer__social(href="http://" + linkUrls[key] target="_blank") 
                         i(class="fa fa-" + item aria-hidden="true") 
-                            span.visually-hidden=linkItems 
+                            //- span.visually-hidden=linkItems 
             .footer__text Subscribe to our newsletter to stay update with what is new
             form(action="#" method="POST")
                 .footer__field: input.footer__input(type="email" placeholder="Email Address")
                 button(type="submit" class="button") Subscribe 
-
-
-
             
     .footer__bottom 
         .footer__copy Cssauthor.com &copy; 2014 All Rights Reserved    

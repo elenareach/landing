@@ -1,6 +1,16 @@
 .approch{
     background-color: $approch-bg;
     padding: 86px 0 95px;
+    @media(max-width:1000px){
+        padding:20px 0;
+    }        
+
+
+    .title{
+        @media(max-width:1000px){
+            margin-bottom: 30px;
+        }
+    }
 
     &__list{
         margin: 0;
@@ -14,13 +24,26 @@
         color:$font-color;
         background-color: #fff;
         box-shadow: -1px -1px 10px 1px rgba(214, 214, 214, 1);
+
+        @media(max-width:1060px){
+            margin:20px 25px;
+            // padding:30px 40px;
+        }
+        
         &:nth-child(even){
             display: flex;
             flex-direction: row-reverse;
             text-align: right;
+            @media(max-width:700px){
+                display:block;
+            }
             .approch__text{
                 padding: 70px 90px 60px 90px;
+                @media(max-width:1000px){
+                    padding:25px 20px;
+                }
             }
+            
             .approch__step{
                 right:auto;
                 left:-52px;
@@ -34,6 +57,14 @@
         max-height: 236px;
         display: inline-block;
         vertical-align: top;
+        @media(max-width:1000px){
+            max-width:calc(340px / 1.5);
+            max-height:calc(236px / 1.5);
+        }
+        @media(max-width:700px){
+            display:block;
+            margin:auto;
+        }
     }
     &__picture{
         width:100%;
@@ -47,6 +78,13 @@
         font-size: 0.875rem;
         vertical-align: top;
         padding: 70px 70px 60px 90px;
+        @media(max-width:1000px){
+            padding:25px 20px;
+        }
+        @media(max-width:700px){
+            width:100%;
+            text-align: center;
+        }
     }
     &__step{
         @include centerer-y();
@@ -59,6 +97,9 @@
         color:#fff;
         font-size: 1.25rem;
         right: -52px;
+        @media(max-width:1000px){
+            display:none;
+        }
 
         &:before{
             content: counter(count);

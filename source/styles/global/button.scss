@@ -5,6 +5,9 @@
     font-family: $ff-main-bold;
     color: $font-btn;
     text-decoration: none;
+    @media(max-width:600px){
+        padding: 6px 10px 4px;
+    }
 
     &--red{
         background-color: $font-main;

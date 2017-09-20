@@ -9,11 +9,30 @@
         flex-wrap: wrap;
         align-items: center;
         padding:42px 0px 32px;
+
+        @media(max-width: 1000px){
+            flex-direction: column;
+        }
+        .button{
+            @media(max-width: 1080px){
+                margin-right: 15px;
+            }  
+        }
+
+        .logo{
+            @media(max-width: 1080px){
+                margin-left:15px;
+            }
+        }
+        
     }
 }
 
 .contacts{ 
     text-align:right;
+    @media(max-width: 1000px){
+        margin-right: 15px;
+    }
      
      .contact{
          display: inline-block;

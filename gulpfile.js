@@ -9,6 +9,7 @@ const concat = require("gulp-concat");
 const uglify = require("gulp-uglify");
 const spritesmith = require("gulp.spritesmith");
 const rimraf = require("rimraf");
+const autoprefixer = require('gulp-autoprefixer');
 
 /*настройка сервера */
 
@@ -21,6 +22,7 @@ gulp.task("server",function(){
     });
     gulp.watch("build/**/*").on("change",browserSync.reload)
 });
+
 
 /*компеляци pug */
 
@@ -41,10 +43,12 @@ gulp.task("styles:compile", function(){
         .pipe( sass({
             outputStyle:"compressed"
         })).on("error", sass.logError)
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(rename("main.min.css"))
         .pipe(gulp.dest("build/css"))
-   
-
 });
 
 /* кокотенация файлов js */

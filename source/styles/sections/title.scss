@@ -8,12 +8,19 @@
         font-family:$ff-main-bold;
         line-height: 1;
         color:$font-color;
+
+        @media(max-width:700px){
+            font-size: 1.5rem;
+        }
     }
     &__text{
         font-size: 1.25rem;
         font-family: $ff-main-light;
         color:$font-color-light;
 
+        @media(max-width:700px){
+            font-size: 1rem;
+        }
 
     }
     &--with-bottom-line{
@@ -25,6 +32,11 @@
             height:5px;
             background-color: $font-color;
             bottom:-16px;
+            
+            @media(max-width:700px){
+                width:40px;
+                height:3px;
+            }
         }
     }
 }
