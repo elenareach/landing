@@ -38,9 +38,14 @@
          display: inline-block;
          vertical-align: top;
          padding: 10px 10px 8px;
+         margin-right:5px;
          color:$font-color;
          transition: 0.3s;
-
+        &:first-child{
+            margin-right:20px;
+            padding-right:18px;
+            border-right:1px solid #e2e2e2;
+        }
          &:hover{
              color:lighten($font-color ,20%);
          }
